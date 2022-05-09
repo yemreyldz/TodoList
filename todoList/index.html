@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+  <script src="index.js"></script>
+
+  <style>
+    .container {
+      width: 80%;
+      height: auto;
+    }
+    body{
+      background-color: #212529;
+    }
+    .foot {
+      position: fixed;
+      left: 10%;
+      bottom: 0;
+      width: 80%;
+      text-align: center;
+    }
+    .text{
+      color: azure;
+    }
+    #button {
+      position: relative;
+      left: 13%;
+      top: 56px;
+    }
+    .alert{
+      max-width: 500px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <center>
+  
+    <button id="button" type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+      Liste Görev Ekleme
+    </button>
+    <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Liste Görev Ekleme</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input type="text" placeholder="Görev Gir" id="text"> 
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="save" data-dismiss="modal">Kaydet</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foot">
+      <div class="row">
+        <div class="col-sm-1"> </div>
+        <div class="col-sm-10">
+          <!-- Input for tasks -->
+          <div class="input-group">
+            <div class="input-group-btn">
+              <i class="glyphicon glyphicon-plus">
+              </i></button>
+            </div>
+          </div>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <h2 class="text">Yapılacaklar Listesi</h2>
+    <br>
+
+    <div class="container">
+    </div>
+
+  </center>
+
+</body>
+
+</html>
